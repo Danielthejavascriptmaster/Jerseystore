@@ -6,6 +6,7 @@ body {
 }
 
 .hero-section {
+    margin-top: 110px;
     position: relative;
     margin-bottom: 150px;
 }
@@ -181,3 +182,181 @@ body {
     white-space: pre-line;
 }
 
+footer {
+    background: #0a1e3f;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97%;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.logo-placeholder {
+    border-radius: 6px;
+    font-size: 50px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.logo-placeholder a{
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0a1e3f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #1b4d8f;
+}
+
+#lang-toggle {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    background: #f5f0e6;
+    border: 1px solid #d9cbb0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#lang-toggle:hover {
+    background: #e8dcc8;
+}
+
+/*responsiveness*/
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    #lang-toggle {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    /* Hero section */
+    .image-container {
+        grid-template-columns: 1fr; /* stack images in 1 column instead of 2 */
+    }
+
+    .image-container img {
+        height: 30vh; /* shorter on mobile so 4 stacked images aren't huge */
+    }
+
+    .image-buttons {
+        left: 20px;
+        bottom: 15px;
+    }
+
+    .image-buttons h2 {
+        font-size: 20px;
+    }
+
+    .image-buttons .shop-button {
+        padding: 8px 30px;
+        font-size: 20px;
+    }
+
+    /* Jersey carousel */
+    .jersey-carousal {
+        overflow-x: auto; /* lets users swipe sideways through jerseys */
+        padding-bottom: 10px;
+    }
+
+    .jersey-carousal img {
+        width: 180px;
+        height: 220px;
+    }
+
+    .sub-hero-section h1 {
+        font-size: 24px;
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    /* Contact / find us section */
+    .personal-details {
+        flex-direction: column; /* stack the two boxes instead of side-by-side */
+        padding: 30px 20px;
+    }
+
+    .where-to-find-us,
+    .how-to-contact-us {
+        max-width: 100%;
+    }
+
+    /* Story section */
+    .our-story-section {
+        padding: 0 20px;
+        margin: 60px auto;
+    }
+
+    .our-story-section .text-header h2 {
+        font-size: 26px;
+    }
+
+    .our-story-section p {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .logo-placeholder {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .image-buttons h2 {
+        font-size: 16px;
+        padding: 4px;
+    }
+
+    .image-buttons .shop-button {
+        padding: 6px 20px;
+        font-size: 16px;
+    }
+}

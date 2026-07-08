@@ -12,10 +12,26 @@
 </head>
 <body>
 
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-placeholder"><a href="#banner">⚽</a></div>
+            </div>
+
+        <div class="nav-links">
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+            <a href="#info"></a>
+        </div>
+
+            <button id="lang-toggle">SE / EN</button>
+        </nav>
+    </header>
+
     <main>
 
         <div class="hero-section">
-            <div class="image-container">
+            <div id="banner" class="image-container">
                 <img src="/assets/images/world-cup-hero-image.webp" alt="world-cup-ball-hero-image">
                 <img src="/assets/images/world-cup-football-jerseys-2.jpg" alt="">
                 <img src="/assets/images/world-cup-football-jerseys.jpg" alt="">
@@ -31,7 +47,7 @@
         <div class="sub-hero-section">
             <h1>Some of the jerseys we sell</h1>
 
-            <div class="jersey-carousal">
+            <div id="shop" class="jersey-carousal">
 
                 <div class="image-folder">
                     <img src="/assets/images/blue-france-world-cup-jersey.jpg" alt="">
@@ -70,7 +86,7 @@
                 </div>
             </div>
 
-            <div class="personal-details">
+            <div id="contact" class="personal-details">
                 <div class="where-to-find-us">
                     <div class="text-header">
                         <h2>Where to find us?</h2>
@@ -125,5 +141,10 @@
     </main>
 
 
+    <footer>
+        <p>&copy; 2026 KitKing. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
